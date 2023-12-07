@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+ <script type="text/javascript">
+    const osoba1 = {firstName:"Marko", lastName:"Maric", age:40, eyeColor:"black"};
+	const osoba2 = {firstName:"Petra", lastName:"Lasic", age:12, eyeColor:"green"};
+	const osoba3 = {firstName:"Mile", lastName:"Coric", age:10, eyeColor:"blue"};
+	
+	
+	let txt1 = "";
+    for (let x in osoba1) {
+    txt1 += osoba1[x] + " ";
+    };
+    document.getElementById("demo1").innerHTML = txt1;
+ 
+    let txt2 = "";
+    for (let x in osoba2) {
+    txt2 += osoba2[x] + " ";
+    };
+
+    document.getElementById("demo2").innerHTML = txt2;
+
+    let txt3 = "";
+    for (let x in osoba3) {
+    txt3 += osoba3[x] + " ";
+    };
+
+    document.getElementById("demo3").innerHTML = txt3;
+    
+ </script>
+</body>
+
+</html>
